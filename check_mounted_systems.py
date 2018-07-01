@@ -8,8 +8,8 @@ import sys
 from multiprocessing import Pool
 
 """This code helps in diagnosing the slowness of currently mounted file systems by running "df -h" 
-on paths found in /etc/mtab. If the command hangs for a given file system for longer than some 
-timeout, it is possible that the system has issues.
+on paths found in /etc/mtab in parallel. If the command hangs for a given file system for longer 
+than some timeout, it is possible that the system has issues.
 
 """
 
